@@ -1,14 +1,14 @@
 fizzbuzzCalculator = (num) => {
-  if(num === 3) {
-    return [1, 2, 'Fizz'];
-  } else if (num === 4){
-    return [1, 2, 'Fizz', 4]
-  } else {
-    return [1, 2, "Fizz", 4, "Buzz"]
-  }
+  const finalFizzbuzz = []
+  for (let i = 1; i <= num; i++) {
+    if(i % 3 === 0) {
+      finalFizzbuzz.push("Fizz")
+    } else {
+      finalFizzbuzz.push(i)
+    }
+  } 
 
+  return finalFizzbuzz
 };
-
-fizzbuzzCalculator
 
 module.exports = fizzbuzzCalculator;
