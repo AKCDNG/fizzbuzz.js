@@ -6,6 +6,6 @@ describe('FizzBuzz Testing', () => {
   })
 
   it('Returns "Fizz" at 3rd index and also returns up to 4 in array when input is 4', () => {
-    expect(fizzbuzzCalculator(5)).toEqual([1, 2, "Fizz", 4])
+    expect(fizzbuzzCalculator(4)).toEqual([1, 2, "Fizz", 4])
   })
 })
